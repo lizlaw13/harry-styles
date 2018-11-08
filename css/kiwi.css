@@ -1,0 +1,114 @@
+/* background color and font style */
+body {
+    font-family: 'Asap', sans-serif;
+    background-color: #353059;
+    height:100vh;
+    overflow: hidden;    
+}
+/* header all on same line and h1 size & placement*/
+h1 {
+    display: inline;
+    font-size:90px;
+    margin-right: 5px;
+}
+/* youtube player */
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+#player{
+    width: 100%;
+    height: 100%; 
+  }
+aside {
+    /* position */
+    position: absolute;
+    top: 25%;
+    right:8%;
+    /* style */
+    padding:20px;
+    border-radius: 20px;
+    background-color: #353059;
+    text-align: center;
+    border:solid;
+}
+.artwork {
+    width:50%;
+    height:50%;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.artwork:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+.bop {
+    z-index: 4;
+    position: absolute;
+    bottom:0%;
+    left: -14%;
+}
+.bop img {
+    width:160%;
+}
+/* play next button */
+.next {
+    z-index: 4;
+    position: absolute;
+    bottom: 47%;
+    right: -6%;
+    width: 42%;
+    height: 30%;
+}
+/* animate play next button */
+@keyframes enterAnimation {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    0% {
+        transform: scale(1.0);
+    }
+}
+.next {
+    animation: enterAnimation 3s ease-in-out infinite;
+}
+/* responsive design */
+@media screen and (max-width: 1076px) {
+    aside {
+    top:14%;
+    }
+    .bop img {
+        width:120%;
+    }
+}
+@media screen and (max-width: 1019px) {
+    aside {
+    top:12%;
+    }
+    .bop img {
+        width:110%;
+    }
+}

@@ -1,0 +1,17 @@
+body, aside {
+    background-color:#ffa500;
+}
+main img{
+    z-index: 4;
+    position: relative;
+    top:0%;
+}
+.bop {
+    z-index: 6;
+    position: absolute;
+    bottom:0%;
+    left: -10%;
+}
+.bop img {
+    width:140%;
+}

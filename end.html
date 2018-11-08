@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Harry Styles Playlist</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/end.css">
+        <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="voting"> 
+            <div class="vote-heading">
+                <h2>Battle of the Songs</h2>
+            </div>
+            <div class="voting-body">
+                <ul id="voting-board">
+                    <!-- hard coded content already in firebase database -->
+                </ul>
+            </div>
+        </div>
+
+        <aside class= "end-links">
+            <a href="index.html" class="replay">Reset Playlist</a>
+            <a href= "https://www.linkedin.com/in/elawrence13/">Developer</a>
+            <a href="https://www.instagram.com/memoircomics/">Illustrator</a>
+        </aside>
+
+
+<!-- firebase import -->
+ <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+ <script>
+   var config = {
+   apiKey: "AIzaSyBmk8bH6r6Nccgf_YHkQPEWFpWrHA3ie14",
+   authDomain: "liz-lawrence.firebaseapp.com",
+   databaseURL: "https://liz-lawrence.firebaseio.com",
+   projectId: "liz-lawrence",
+   storageBucket: "liz-lawrence.appspot.com",
+   messagingSenderId: "778222911584"
+ };
+ firebase.initializeApp(config);
+ </script>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/end.js"></script>
+
+
+</body>
+</html>
+
+

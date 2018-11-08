@@ -1,0 +1,36 @@
+body { 
+    font-family: 'Asap', sans-serif;
+    background-image: url("../img/landing.jpg");
+    height:50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    overflow: visible;
+}
+/* battle of the songs heading */
+h2 {
+    font-size:55px;
+    text-align:center;
+}
+.voting {
+    border-radius: 20px;
+    background-color: #fffff0;
+    font-family: 'Asap', sans-serif;
+    color:#000000;
+    padding:20px;
+    width:45%;
+    position:absolute;
+    top:15%;
+    left:26%;
+
+}
+/* voting- board songs */
+ul {
+    list-style-type: none;
+    text-align:center;
+}
+li {
+    padding:3%;
+    font-size:30px;
+}
